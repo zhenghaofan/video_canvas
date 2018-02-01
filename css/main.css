@@ -1,0 +1,36 @@
+.buttons {
+    overflow: hidden;
+}
+.buttons button, .drawing button {
+    float: right;
+    margin-left: 10px;
+}
+
+.drawing {
+    display: none;
+    margin-top: 10px;
+}
+
+#myplayer {
+    /*border: 1px solid #cccccc;*/
+    margin-top: 10px;
+}
+
+.player-drawing {
+    z-index: -1;
+}
+
+#canvas {
+    height: 337px;
+    margin: -400px auto 0;
+    /*z-index: 10;*/
+    /*height: 340px;*/
+    width: 960px;
+    cursor: url('./paint.cur'), auto;
+    display: block;
+    /*background-color: #000;*/
+    /*position: absolute;*/
+    /*top: 51px;
+    left: 104px;
+    display: none;*/
+}

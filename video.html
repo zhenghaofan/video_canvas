@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>课前微课资料</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/video-js.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+        <div class="buttons">
+            <button class="btn btn-lg pen">画笔</button>
+            <button class="btn btn-lg draw-play">播放画笔</button>
+        </div>
+        <div class="drawing">
+            <button class="btn btn-lg redraw">重画</button>
+            <button class="btn btn-lg save">确定保存</button>
+        </div>
+        <video class="video-js vjs-default-skin" controls preload="none" width="960" height="400" data-setup='{ "html5" : { "nativeControlsForTouch" : true }, "controlBar": { "volumePanel": {"inline": false } } }' id="myplayer">
+            <source src="./oceans.mp4" type="video/mp4">
+          </video>
+        <canvas id="canvas" width="960" height="400"></canvas>
+
+    <script src="./js/videojs-ie8.min.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src='./js/main.js'></script>
+</body>
+
+</html>
